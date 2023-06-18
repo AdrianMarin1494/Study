@@ -26,3 +26,11 @@ let people: Person[];
 let inferenceString = "Inference string";
 
 let unionStringAndNumber: string | number = "This can bea string or a number";
+
+function addTwo(a: number, b: number): number {
+    return a + b;
+}
+
+function printSomething(something: any): void {
+    console.log(something);
+}
