@@ -10,19 +10,18 @@ isFun = true;
 let programmingLanguages: string[];
 programmingLanguages = ["JavaScript", "TypeScript"];
 
-let person: {
+type Person = {
     name: string;
     age: number;
-};
+}
+
+let person: Person;
 person = {
     name: "Adrian",
     age: 29
 };
 
-let people: {
-    name: string;
-    age: number;
-}[];
+let people: Person[];
 
 let inferenceString = "Inference string";
 
