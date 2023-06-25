@@ -34,3 +34,14 @@ function addTwo(a: number, b: number): number {
 function printSomething(something: any): void {
     console.log(something);
 }
+
+// Generics
+ function insertAtTheBeginning<T>(array: T[], value: T) {
+    const newArray = [value, ...array];
+    return newArray;
+ }
+
+ const demoArray = [1, 2, 3];
+
+ const updatedArray = insertAtTheBeginning(demoArray, -1);
+ const stringArray = insertAtTheBeginning(['a', 'b'], 'c');
